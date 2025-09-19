@@ -1,27 +1,24 @@
-#Custom Data Structures in Java
+# 🚀 Custom Data Structures in Java
 
-This repository contains custom implementations of ArrayList and Stack in Java using arrays.
+This repository contains custom implementations of **ArrayList** and **Stack** in Java using arrays.  
 Both are implemented from scratch without using Java’s built-in collection classes, for better understanding of core data structure mechanics.
 
-##Implementations
-###1. CustomArrayList
+---
 
-A dynamic array implementation that resizes itself when capacity is exceeded.
+## 📦 Implementations
 
-###Features:
+### 1. CustomArrayList
+A dynamic array implementation that resizes itself when capacity is exceeded.  
 
-add(int x) → Adds an element at the end, resizes if needed.
+**Features:**
+- `add(int x)` → Adds an element at the end, resizes if needed.  
+- `remove(int x)` → Removes the first occurrence of a given element and shifts elements left.  
+- `contains(int v)` → Checks if the element exists in the list.  
+- `get(int index)` → Retrieves element at a specific index (returns `-1` if index is invalid).  
+- `size()` → Returns the number of elements.  
 
-remove(int x) → Removes the first occurrence of a given element and shifts elements left.
-
-contains(int v) → Checks if the element exists in the list.
-
-get(int index) → Retrieves element at a specific index (returns -1 if index is invalid).
-
-size() → Returns the number of elements.
-
-###Example usage:
-
+**Example usage:**
+```java
 CustomArrayList list = new CustomArrayList(5);
 list.add(10);
 list.add(20);
@@ -33,33 +30,29 @@ System.out.println(list.contains(30)); // true
 list.remove(20);
 System.out.println(list.size());     // 2
 
-###2. CustomStack
 
-A stack (LIFO) implementation backed by an integer array.
+### 2. CustomStack
+A stack (Last-In-First-Out: **LIFO**) implementation backed by an integer array.  
 
-###Features:
+**Features:**
+- `push(int x)` → Pushes an element onto the stack.  
+- `pop()` → Removes the top element (throws exception if the stack is empty).  
+- `peek()` → Returns the top element without removing it.  
+- `search(int v)` → Checks if a given element exists in the stack.  
+- `size()` → Returns the number of elements currently in the stack.  
 
-push(int x) → Push an element onto the stack.
-
-pop() → Removes the top element (throws exception if stack is empty).
-
-peek() → Returns the top element without removing it.
-
-search(int v) → Checks if a given element is present in the stack.
-
-size() → Returns the number of elements currently in the stack.
-
-###Example usage:
-
+**Example usage:**
+```java
 CustomStack stack = new CustomStack(5);
 stack.push(10);
 stack.push(20);
 stack.push(30);
 
-System.out.println(stack.peek());  // 30
+System.out.println(stack.peek());   // 30
 stack.pop();
-System.out.println(stack.size());  // 2
+System.out.println(stack.size());   // 2
 System.out.println(stack.search(10)); // true
+
 
 #How to Run
 
