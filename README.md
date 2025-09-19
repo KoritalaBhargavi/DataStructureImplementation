@@ -31,7 +31,7 @@ list.remove(20);
 System.out.println(list.size());     // 2
 
 
-### 2. CustomStack
+### 1. CustomStack
 A stack (Last-In-First-Out: **LIFO**) implementation backed by an integer array.  
 
 **Features:**
