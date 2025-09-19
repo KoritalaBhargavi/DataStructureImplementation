@@ -14,17 +14,17 @@ Src/ │ ├── CustomStack.java # Custom stack implementation ├── Cust
 
 ## 🛠 Features
 
-### 🔹 CIEStack (Custom Stack)
+### 🔹 CustomStack
 - Push an element  - O(1)
 - Pop an element  - O(1)
 - Peek the top element  - O(1)
 - search for an eleemnt - O(n)
 - Find Size - O(1) 
 
-### 🔹 CustomList (Custom Generic List)
+### 🔹 CustomArrayList
 - Add elements dynamically (auto-resizing array)  - O(1)
 - Get element at index  - O(n)
-- Remove element at index (with shifting)  - O(1)
+- Remove element at index (with shifting)  - O(n)
 - Get current size  - O(1)
 
 ---
