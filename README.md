@@ -18,7 +18,8 @@ A dynamic array implementation that resizes itself when capacity is exceeded.
 - `size()` → Returns the number of elements.  
 
 **Example usage:**
-```java
+
+```
 CustomArrayList list = new CustomArrayList(5);
 list.add(10);
 list.add(20);
@@ -28,21 +29,22 @@ System.out.println(list.get(1));     // 20
 System.out.println(list.contains(30)); // true
 
 list.remove(20);
-System.out.println(list.size());     // 2
+System.out.println(list.size());     // 2 ``` 
 
+2. CustomStack
 
-### 1. CustomStack
-A stack (Last-In-First-Out: **LIFO**) implementation backed by an integer array.  
+A stack (Last-In-First-Out: LIFO) implementation backed by an integer array.
 
-**Features:**
-- `push(int x)` → Pushes an element onto the stack.  
-- `pop()` → Removes the top element (throws exception if the stack is empty).  
-- `peek()` → Returns the top element without removing it.  
-- `search(int v)` → Checks if a given element exists in the stack.  
-- `size()` → Returns the number of elements currently in the stack.  
+**Features: **
+
+push(int x) → Pushes an element onto the stack.
+pop() → Removes the top element (throws exception if the stack is empty).
+peek() → Returns the top element without removing it.
+search(int v) → Checks if a given element exists in the stack.
+size() → Returns the number of elements currently in the stack.
 
 **Example usage:**
-```java
+```
 CustomStack stack = new CustomStack(5);
 stack.push(10);
 stack.push(20);
